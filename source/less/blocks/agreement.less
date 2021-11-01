@@ -1,0 +1,33 @@
+.agreement {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    display: flex;
+    position: relative;
+    padding-left: 33px;
+}
+.agreement__input {
+    order: 0;
+}
+.agreement::before {
+    position: absolute;
+    content: '';
+    width: 24px;
+    height: 24px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 4px;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+  }
+.agreement__input:checked + .agreement::before {
+    content: "";
+
+    background-image: url("../../img/icon/check.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
