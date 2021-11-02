@@ -130,9 +130,9 @@
 						</label>
 					</li>
 				</ul>
-				<section>
+				<section class="museum__block" id="content-1">
 					<h2 class="visually-hidden">Здания</h2>
-				<ul class="building building__list museum__block" id="content-1">
+				<ul class="building building__list museum__block">
 					<li class="building__item">
 						<article class="building-card">
 							<img class="building-card__img" src="./img//building/img1.jpg" width="312" height="148" alt="Мемориальная квартира С.Т.Рихтера">
@@ -264,6 +264,22 @@
 			</div>
 		</div>
 	</footer>
+	<template id="pop-up">
+		<article class="form">
+			<div class="form__wrapper">
+				<div class="form__title-wrapper">
+					<h2 class="form__title">Вход</h2>
+					<button class="form__btn-cloce" title="закрыть" type="button">
+						<span class="visually-hidden">Закрыть</span>
+					</button>
+				</div>
+				<input class="form__input" type="text" title="Логин" placeholder="Логин">
+				<input class="form__input" type="password" title="Пароль" placeholder="Пароль">
+				<button class="form__btn" title="Вход" type="button">Вход</button>
+			</div>
+		</article>
+	</template>		
+	</div>
 	<script src="./index.js"> </script>
 </body>
 
